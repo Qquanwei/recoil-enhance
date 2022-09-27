@@ -19,12 +19,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Qquanwei/typescript-npm-package-template.git"
+    "url": "git+https://github.com/Qquanwei/recoil-enhance.git"
   },
   "license": "MIT",
   "author": {
     "name": "Qquanwei",
-    "email": "Qquanwei@users.noreply.github.com",
+    "email": "quanwei9958@126.com",
     "url": "https://github.com/Qquanwei"
   },
   "engines": {
@@ -42,9 +42,9 @@
     "codecov"
   ],
   "bugs": {
-    "url": "https://github.com/Qquanwei/typescript-npm-package-template/issues"
+    "url": "https://github.com/Qquanwei/recoil-enhance/issues"
   },
-  "homepage": "https://github.com/Qquanwei/typescript-npm-package-template#readme",
+  "homepage": "https://github.com/Qquanwei/recoil-enhance#readme",
   "devDependencies": {
     "@types/jest": "^27.5.2",
     "@types/node": "^12.20.11",
@@ -66,11 +66,6 @@
     "@types/react": "17",
     "react": ">=17.0.0",
     "recoil": ">=0.7.5"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/@Qquanwei/cz-conventional-changelog"
-    }
   },
   "lint-staged": {
     "*.ts": "eslint --cache --cache-location .eslintcache --fix"
