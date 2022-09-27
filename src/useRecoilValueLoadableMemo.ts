@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { useRecoilValueLoadable, RecoilState } from 'recoil';
 
-export function useRecoilValueLoadableMemo(state: RecoilState<any>) {
+export function useRecoilValueLoadableMemo<T>(state: RecoilState<T>) {
   const loadable = useRecoilValueLoadable(state);
   const ref = useRef(loadable);
 

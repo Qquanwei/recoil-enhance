@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 import { useRecoilValueLoadable, RecoilState } from 'recoil';
 
-export function useRecoilValueMemo(state: RecoilState<any>) {
+export function useRecoilValueMemo<T>(state: RecoilState<T>) {
   const loadable = useRecoilValueLoadable(state);
-  const ref = useRef(null);
+  const ref = useRef<T | null>(null);
 
   if (loadable.state === 'hasValue') {
     ref.current = loadable.contents;
