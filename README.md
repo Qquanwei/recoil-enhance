@@ -6,15 +6,26 @@ npm install recoil-enhance
 
 ## Usage
 
-```ts
-import { myPackage } from 'my-package-name';
+```diff
+import { useRecoilValueMemo, useRecoilValueLoadableMemo } from 'recoil-enhance';
 
-myPackage('hello');
-//=> 'hello from my package'
+function App() {
+
+- const user = useRecoilValue(userSelector);
++ const user = useRecoilValueMemo(userSelector);
+
+
+- const userLoadable = useRecoilLoadable(userSelector);
++ const userLoadable = useRecoilLoadableMemo(userSelector);
+}
 ```
 
 ## API
 
-### useRecoilValueMemo
+### useRecoilValueMemo(recoilState)
+
+like `useRecoilValue`, but will not loading when refresh selector.
 
 ### useRecoilValueLoadableMemo
+
+like `useRecoilValueLoadable`, but `loadable.content` always hold latest value.
