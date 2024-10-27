@@ -1,6 +1,6 @@
 {
   "name": "recoil-enhance",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "recoil-enhance proive powerful hooks",
   "main": "./lib/src/index.js",
   "files": [
